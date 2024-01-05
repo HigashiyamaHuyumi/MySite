@@ -1,0 +1,59 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.nav-item a {
+  color: #FAFAFA;
+  font-size: 16px;
+  margin: 30px;
+}
+
+.mv {
+  color: #FAFAFA;
+  text-align: center;
+  height: 650px;
+  background-image: url('mv.png');
+  background-size: cover; /* 画像をコンテナ全体に広げる */
+  background-repeat: no-repeat; /* 画像を繰り返さないようにする */
+  background-position: center; /* 画像を中央に配置する */
+  /* その他のスタイルを追加できます */
+}
+
+.mv-title{
+  font-size: 64px;
+  padding-top: 200px;
+}
+
+.mv-subtitle{
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.portfolio {
+  background-color: #ECEFF1;
+  text-align: center;
+}
+
+.pf-title{
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 8px;
+}
+
+.photos {
+  background-image: url('sketch.jpg');
+}
