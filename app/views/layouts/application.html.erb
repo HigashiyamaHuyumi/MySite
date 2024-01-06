@@ -15,10 +15,10 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg text-black" style="background-color: #EC715F; height:70px;">
+      <nav class="navbar navbar-expand-lg text-black">
         <div class="container">
           <%= link_to root_path, class: "navbar-brand" do %>
-            <%= image_tag "logo.png", alt: "MySite Logo", class: "img-fluid", style: "max-height: 40px; max-width: 100%;" %>
+            <%= image_tag "logo.png", alt: "MySite Logo" , class: "img-fluid" %>
           <% end %>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,28 +51,37 @@
       </nav>
     </header>
     
-    
     <main>
-      <div class="container">
-        <div class="mv">
+      <div class="mv">
+        <div class="container">
           <h1 class="mv-title">Lorem Ipsum</h1>
           <p ="mv-subtitle">simply dummy text of the printing</p>
         </div>
       <div>
-      
-      <div class="container">
-        <div class="portfolio">
+    </main>
+    
+    <main>
+      <div class="portfolio">
+        <div class="container">
           <h1 class="pf-title">Portfolio</h1>
-          <p>
+          <p class="pf-text">
             It is a long established fact that a reader will be distracted by the readable<br>
             content of a page when looking at its layout.<br>
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
           </p>
-          <div class=photos> </div>
+          <div class="images">
+            <div class="image1"></div>
+            <div class="image2"></div>
+            <div class="image3"></div>
+            <div class="image4"></div>
+            <div class="image5"></div>
+            <div class="image6"></div>
+          </div>
         </div>
       </div>
-        
     </main>
+    
+    
     <%= flash[:notice] %>
     <%= yield %>
   </body>

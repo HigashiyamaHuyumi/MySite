@@ -14,21 +14,30 @@
  *= require_self
  */
 
+.navbar {
+  background-color: #EC715F;
+  max-height: 70px;
+}
+
+.img-fluid {
+  max-height: 70px;
+  max-width: 100%;
+}
+
 .nav-item a {
   color: #FAFAFA;
   font-size: 16px;
-  margin: 30px;
+  padding: 0 30px;
 }
+
+
 
 .mv {
   color: #FAFAFA;
   text-align: center;
   height: 650px;
   background-image: url('mv.png');
-  background-size: cover; /* 画像をコンテナ全体に広げる */
-  background-repeat: no-repeat; /* 画像を繰り返さないようにする */
   background-position: center; /* 画像を中央に配置する */
-  /* その他のスタイルを追加できます */
 }
 
 .mv-title{
@@ -37,13 +46,17 @@
 }
 
 .mv-subtitle{
-  padding-top: 10px;
   font-size: 20px;
+  padding-top: 10px;
 }
 
+
+
 .portfolio {
+  background-position: center; /* 画像を中央に配置する */
   background-color: #ECEFF1;
   text-align: center;
+  
 }
 
 .pf-title{
@@ -54,6 +67,46 @@
   padding-bottom: 8px;
 }
 
-.photos {
+.pf-text {
+  font-size: 16px;
+  color: #000000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.images > div {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.image1 {
   background-image: url('sketch.jpg');
+}
+
+.image2 {
+  background-image: url('websuku.png');
+}
+
+.image3 {
+  background-image: url('write.jpg');
+}
+
+.image4 {
+  background-image: url('webcamp.png');
+}
+
+.image5 {
+  background-image: url('talk.jpg');
+}
+
+.image6 {
+  background-image: url('webcamp-mother.png');
 }
