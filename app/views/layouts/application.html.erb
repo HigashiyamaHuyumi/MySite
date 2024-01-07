@@ -14,11 +14,13 @@
 
 
   <body>
+    
     <header>
       <nav class="navbar navbar-expand-lg text-black">
         <div class="container">
+          
           <%= link_to root_path, class: "navbar-brand" do %>
-            <%= image_tag "logo.png", alt: "MySite Logo" , class: "img-fluid" %>
+            <%= image_tag "logo.png", alt: "MySite Logo" , class: "logo" %>
           <% end %>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,21 +28,18 @@
               <i class="fas fa-bars"></i>
             </span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
+            
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a href="#portfolio">Portfolio</a>
               </li>
-
               <li class="nav-item">
                 <a href="#feature">Feature</a>
               </li>
-
               <li class="nav-item">
                 <a href="#profile">Profile</a>
               </li>
-
               <li class="nav-item">
                 <a href="#contact">Contact</a>
               </li>
@@ -81,6 +80,24 @@
       </div>
     </main>
     
+    <main>
+      <div class="Feature">
+        <div class="container">
+          <h1 class="f-title">Feature</h1>
+          <p class="f-text">
+            It is a long established fact that a reader will be distracted by the readable<br>
+            content of a page when looking at its layout.<br>
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+          </p>
+          <div class="images">
+            <div class="image1"></div>
+            <div class="image2"></div>
+            <div class="image3"></div>
+
+          </div>
+        </div>
+      </div>
+    </main>
     
     <%= flash[:notice] %>
     <%= yield %>
