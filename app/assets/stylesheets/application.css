@@ -88,6 +88,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 90px;
 }
 
 .images > div {
@@ -99,10 +100,12 @@ header {
 
 .image1 {
   background-image: url('sketch.jpg');
+  padding: 0 10px 10px 0;
 }
 
 .image2 {
   background-image: url('websuku.png');
+  padding: 0 10px 10px 0;
 }
 
 .image3 {
@@ -119,4 +122,10 @@ header {
 
 .image6 {
   background-image: url('webcamp-mother.png');
+}
+
+
+
+.fa-solid {
+  font-size: 60px;
 }
