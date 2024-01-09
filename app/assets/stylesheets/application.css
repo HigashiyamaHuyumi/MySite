@@ -62,33 +62,44 @@ header {
 
 
 
-.portfolio {
-  background-position: center; /* 画像を中央に配置する */
+
+.portfolio, .profile {
+  background-position: center;
   background-color: #ECEFF1;
-  text-align: center;
-  
 }
 
-.pf-title {
+.portfolio, .feature, .profile, .contact {
+  text-align: center;
+  padding: 90px 0;
+}
+
+.title {
   color: #000000;
   font-size: 32px;
   text-align: center;
-  padding-top: 90px;
   padding-bottom: 8px;
 }
 
-.pf-text {
+.border {
+  background-color: #EC715F;
+  width: 70px;
+  height: 3px;
+  display: inline-block;
+}
+
+.text {
+  text-align: center;
+  padding: 30px 0;
   font-size: 16px;
   color: #000000;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .images {
+  width: 920px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 90px;
+  margin: 0 auto;
 }
 
 .images > div {
@@ -100,16 +111,17 @@ header {
 
 .image1 {
   background-image: url('sketch.jpg');
-  padding: 0 10px 10px 0;
+  margin: 0 10px 10px 0;
 }
 
 .image2 {
   background-image: url('websuku.png');
-  padding: 0 10px 10px 0;
+  margin: 0 10px 10px 0;
 }
 
 .image3 {
   background-image: url('write.jpg');
+  margin-bottom: 10px;
 }
 
 .image4 {
@@ -128,28 +140,7 @@ header {
 
 .feature {
   width: 980px;
-  margin: 90px auto;
-}
-
-.f-title {
-  text-align: center;
-  padding-bottom:8px;
-  size: 32px;
-  color: #000000;
-}
-
-.border {
-  background-color: #EC715F;
-  width: 70px;
-  height: 3px;
-  display: inline-block;
-}
-
-.f-text {
-  text-align: center;
-  padding: 30px 0;
-  size: 16px;
-  color: #000000;
+  margin: 0 auto;
 }
 
 .strength-group {
@@ -178,8 +169,63 @@ header {
   color: #000000;
 }
 
-.strength-text {
-  size: 16px;
+.strength-text, .profile-text {
+  font-size: 16px;
   color: #000000;
   text-align: left;
+}
+
+
+.profile {
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+}
+
+.profile-title {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.profile .col-6 {
+  width: 512px;
+}
+
+.contact-title {
+  font-size: 20px;
+  text-align: left;
+}
+
+.contact-text {
+  text-align: left;
+  padding: 5px 0 20px 0;
+}
+
+.sns-group i {
+  text-align: left;
+  font-size: 50px;
+  padding: 5px 20px;
+}
+
+.contact .col-6 {
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+
+fotter {
+  height: 60px;
+  width: 100%;
+  background-color: #EC715F;
+  text-align: center;
+}
+
+.fotter-text {
+  font-size: 16px;
+  color: #FAFAFA;
 }

@@ -56,14 +56,15 @@
           <h1 class="mv-title">Lorem Ipsum</h1>
           <p ="mv-subtitle">simply dummy text of the printing</p>
         </div>
-      <div>
+      </div>
     </main>
     
     <main>
       <div class="portfolio">
         <div class="container">
-          <h1 class="pf-title">Portfolio</h1>
-          <p class="pf-text">
+          <h1 class="title">Portfolio</h1>
+          <div class="border"></div>
+          <p class="text">
             It is a long established fact that a reader will be distracted by the readable<br>
             content of a page when looking at its layout.<br>
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
@@ -83,16 +84,15 @@
     <main>
       <div class="feature">
         <div class="container">
-          <h1 class="f-title">Feature</h1>
+          <h1 class="title">Feature</h1>
           <div class="border"></div>
-          <p class="f-text">
+          <p class="text">
             It is a long established fact that a reader will be distracted by the readable<br>
             content of a page when looking at its layout.<br>
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
           </p>
           
           <div class="strength-group">
-            
             <div class="strength1">
               <i class="fa-solid fa-code"></i>
               <h1 class="strength-title">
@@ -143,11 +143,97 @@
                 obscure Latin words, consectetur
               </p>
             </div>
-            
           </div>
         </div>
       </div>
     </main>
+    
+    <main>
+      <div class="profile">
+        <div class="container">
+          <h1 class="title">Profile</h1>
+          <div class="border"></div>
+          <p class="text">
+            It is a long established fact that a reader will be distracted by the readable<br>
+            content of a page when looking at its layout.<br>
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+          </p>
+          
+          <div class="row">
+            <div class="col-6">
+              <%= image_tag "my-icon.jpg", alt: "profile-image" , class: "profile-image" %>
+            </div>
+            <div class="col-6">
+              <h1 class="profile-title">
+                MyName
+              </h1>
+              <p class="profile-text">
+                Contrary to popular belief, Lorem Ipsum is not simply random 
+                text. It has roots in a piece of classical Latin literature from 45 
+                BC, making it over 2000 years old. Richard McClintock, a Latin 
+                professor at Hampden-Sydney College in Virginia, looked up one 
+                of the more obscure Latin words, consectetur
+              </p>
+              <h1 class="profile-title">
+                MySkills
+              </h1>
+              <p class="profile-text">
+                HTML/CSS,JavaScript,JQuery,PhotoShop
+              </p>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    </main>
+    
+    <main>
+      <div class="contact">
+        <div class="container">
+          <h1 class="title">Contact</h1>
+          <div class="border"></div>
+          <p class="text">
+            It is a long established fact that a reader will be distracted by the readable<br>
+            content of a page when looking at its layout.<br>
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+          </p>
+          
+          <div class="row">
+            <div class="col-6">
+              <h1 class="contact-title">
+                Mail
+              </h1>
+              <p class="contact-text">
+                xxx@xxx.com
+              </p>
+              <h1 class="contact-title">
+                Tel
+              </h1>
+              <p class="contact-text">
+                000-0000-0000
+              </p>
+            </div>
+            <div class="col-6">
+              <h1 class="contact-title">
+                SNS
+              </h1>
+              <div class="sns-group">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    </main>
+    
+    <fotter>
+      <div class="container">
+        <p class="fotter-text">©︎ 2017 WebCamp</p>
+      </div>
+    </fotter>
     
     <%= flash[:notice] %>
     <%= yield %>
